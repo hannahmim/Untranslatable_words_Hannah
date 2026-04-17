@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="Vi">
+<html lang="Vi"> <!-- Viet -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chút xíu - Detail</title>
+    <!-- Word -->
+    <title>Chút xíu - Detail</title> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;700;900&display=swap" rel="stylesheet">
@@ -12,7 +13,7 @@
 <body>
 
     <header class="header">
-        <a href="Tiếng Việt.html" class="back-btn">
+        <a href="Tiếng Việt.html" class="back-btn"> <!-- Where the back btn leads -->
             <img src="https://img.icons8.com/m_outlined/50/D63D42/left.png" alt="back" width="28">
         </a>
     </header>
@@ -23,18 +24,18 @@
             <h1 class="detail-word">Chút xíu</h1>
 
             <div class="pronunciation-group">
-                <button class="audio-btn" onclick="playAudio()">
+                <button class="audio-btn" onclick="playAudio()"><!-- 확성기 speaker -->
                     <img src="https://img.icons8.com/m_sharp/50/D63D42/speaker.png" alt="listen" width="24">
                 </button>
-                <span class="phonetic-script">[cǔt síw]</span>
+                <span class="phonetic-script">[cǔt síw]</span> <!-- international pronounce -->
             </div>
 
-            <p class="word-definition">
+            <p class="word-definition"><!-- Definition of word -->
                  A very small amount or a tiny bit of something
             </p>
 
             <div class="example-section">
-                <p class="example-text">
+                <p class="example-text"><!-- example in eac OTHER lang -->
                     Give me <span class="highlight">Chút xíu</span> more time.<br>
                     나에게 <span class="highlight">Chút xíu</span>만 더 시간을 줘.<br>
                     Donne-moi encore un peu de temps, <span class="highlight">Chút xíu</span>.
@@ -45,10 +46,10 @@
     </main>
 
         <audio id="wordAudio" src="V_fourth.mp3"></audio>
-
+<!-- Where it leads -->
     <script>
         function playAudio() {
-            const audio = document.getElementById('wordAudio');
+            const audio = document.getElementById('wordAudio');  
             audio.play();
         }
     </script>

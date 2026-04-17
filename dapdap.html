@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Word -->
     <title>답답하다 - Detail</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +13,7 @@
 <body>
 
     <header class="header">
-        <a href="한국어.html" class="back-btn">
+        <a href="한국어.html" class="back-btn"> <!-- Where the back btn leads -->
             <img src="https://img.icons8.com/m_outlined/50/D63D42/left.png" alt="back" width="28">
         </a>
     </header>
@@ -23,13 +24,13 @@
             <h1 class="detail-word">답답하다</h1>
 
             <div class="pronunciation-group">
-                <button class="audio-btn" onclick="playAudio()">
+                <button class="audio-btn" onclick="playAudio()"><!-- 확성기 speaker -->
                     <img src="https://img.icons8.com/m_sharp/50/D63D42/speaker.png" alt="listen" width="24">
                 </button>
-                <span class="phonetic-script">[t͡ap.t͡ap.ha.da]</span>
+                <span class="phonetic-script">[t͡ap.t͡ap.ha.da]</span> <!-- international pronounce -->
             </div>
 
-            <p class="word-definition">
+            <p class="word-definition"> <!-- Definition of word -->
                 A feeling of emotional or physical suffocation, <br>
                 frustration mixed with constraint,  <br>
                 as if something is blocked or unresolved. <br>
@@ -37,7 +38,7 @@
 
             <div class="example-section">
                 <p class="example-text">
-                    Waiting for an answer with no  <br>
+                    Waiting for an answer with no  <br> <!-- example in eac OTHER lang -->
                     explanation made him feel <span class="highlight">답답하다</span>. <br>
                     Chờ câu trả lời mà không có lời giải <br>
                     thích khiến anh ấy cảm thấy <span class="highlight">답답하다</span>. <br>
@@ -50,7 +51,7 @@
     </main>
 
         <audio id="wordAudio" src="K_fourth_sound.mp3"></audio>
-
+<!-- Where it leads -->
     <script>
         function playAudio() {
             const audio = document.getElementById('wordAudio');

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Word -->
     <title>눈치 - Detail</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +13,7 @@
 <body>
 
     <header class="header">
-        <a href="한국어.html" class="back-btn">
+        <a href="한국어.html" class="back-btn"> <!-- Where the back btn leads -->
             <img src="https://img.icons8.com/m_outlined/50/D63D42/left.png" alt="back" width="28">
         </a>
     </header>
@@ -23,20 +24,20 @@
             <h1 class="detail-word">눈치</h1>
 
             <div class="pronunciation-group">
-                <button class="audio-btn" onclick="playAudio()">
+                <button class="audio-btn" onclick="playAudio()"> <!-- 확성기 speaker -->
                     <img src="https://img.icons8.com/m_sharp/50/D63D42/speaker.png" alt="listen" width="24">
                 </button>
-                <span class="phonetic-script">[nuɲt͡ɕʰi]</span>
+                <span class="phonetic-script">[nuɲt͡ɕʰi]</span> <!-- international pronounce -->
             </div>
 
-            <p class="word-definition">
+            <p class="word-definition"> <!-- Definition of word -->
                 Quickly noticing how people feel and <br>
                 what's going on, so you act the right <br>
                 way without being told.
             </p>
 
             <div class="example-section">
-                <p class="example-text">
+                <p class="example-text"> <!-- example in eac OTHER lang -->
                     With <span class="highlight">눈치</span> , she understood the mood quickly.<br>
                     Với <span class="highlight">눈치</span>, cô ấy nhanh chóng hiểu được tâm trạng của mọi người.<br>
                     Avec <span class="highlight">눈치</span>, elle a rapidement compris l'ambiance.
@@ -47,7 +48,7 @@
     </main>
 
         <audio id="wordAudio" src="K_second_sound.mp3"></audio>
-
+<!-- Where it leads -->
     <script>
         function playAudio() {
             const audio = document.getElementById('wordAudio');

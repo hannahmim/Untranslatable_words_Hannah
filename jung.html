@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Word -->
     <title>정 - Detail</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +13,7 @@
 <body>
 
     <header class="header">
-        <a href="한국어.html" class="back-btn">
+        <a href="한국어.html" class="back-btn"> <!-- Where the back btn leads -->
             <img src="https://img.icons8.com/m_outlined/50/D63D42/left.png" alt="back" width="28">
         </a>
     </header>
@@ -23,13 +24,13 @@
             <h1 class="detail-word">정</h1>
 
             <div class="pronunciation-group">
-                <button class="audio-btn" onclick="playAudio()">
+                <button class="audio-btn" onclick="playAudio()"> <!-- 확성기 speaker -->
                     <img src="https://img.icons8.com/m_sharp/50/D63D42/speaker.png" alt="listen" width="24">
                 </button>
-                <span class="phonetic-script">[t͡ɕʌ̹ŋ]</span>
+                <span class="phonetic-script">[t͡ɕʌ̹ŋ]</span> <!-- international pronounce -->
             </div>
 
-            <p class="word-definition">
+            <p class="word-definition"> <!-- Definition of word -->
                 A deep emotional bond that grows over<br>
                 time through shared experiences, <br>
                 care and attachment. <br>
@@ -38,7 +39,7 @@
             </p>
 
             <div class="example-section">
-                <p class="example-text">
+                <p class="example-text"> <!-- example in eac OTHER lang -->
                     Even after years apart, they still felt <br>
                     a quiet <span class="highlight">정</span> toward each other.<br>
                     Dù đã xa nhau nhiều năm, họ vẫn cảm <br>
@@ -52,7 +53,7 @@
     </main>
 
         <audio id="wordAudio" src="K_one_sound.mp3"></audio>
-
+<!-- Where it leads -->
     <script>
         function playAudio() {
             const audio = document.getElementById('wordAudio');

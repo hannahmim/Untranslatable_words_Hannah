@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Word -->
     <title>Giàu tình cảm - Detail</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +13,7 @@
 <body>
 
     <header class="header">
-        <a href="Tiếng Việt.html" class="back-btn">
+        <a href="Tiếng Việt.html" class="back-btn"> <!-- Where the back btn leads -->
             <img src="https://img.icons8.com/m_outlined/50/D63D42/left.png" alt="back" width="28">
         </a>
     </header>
@@ -20,23 +21,23 @@
     <main class="detail-container">
         <div class="content-box">
             
-            <h1 class="detail-word">Giàu tình cảm</h1>
+            <h1 class="detail-word">Giàu tình cảm</h1> 
 
             <div class="pronunciation-group">
-                <button class="audio-btn" onclick="playAudio()">
+                <button class="audio-btn" onclick="playAudio()"> <!-- 확성기 speaker -->
                     <img src="https://img.icons8.com/m_sharp/50/D63D42/speaker.png" alt="listen" width="24">
                 </button>
-                <span class="phonetic-script">[zaw˨˩ tiŋ˧˨˩ kam˧˩˧]</span>
+                <span class="phonetic-script">[zaw˨˩ tiŋ˧˨˩ kam˧˩˧]</span> <!-- international pronounce -->
             </div>
 
-            <p class="word-definition">
+            <p class="word-definition"> <!-- Definition of word -->
                 Literally “rich in feelings.”  <br>
                 Describes someone who is emotionally  <br>
                 expressive, affectionate, and deeply sensitive.
             </p>
 
             <div class="example-section">
-                <p class="example-text">
+                <p class="example-text"> <!-- example in eac OTHER lang -->
                     He is <span class="highlight">Giàu tình cảm</span>, always showing <br>
                     care through small gestures.<br>
                     그는 <span class="highlight">Giàu tình cảm</span>하며, 작은 행동들로 늘 마음을 표현한다.<br>
@@ -49,7 +50,7 @@
     </main>
 
         <audio id="wordAudio" src="v_second ver.mp3"></audio>
-
+<!-- Where it leads -->
     <script>
         function playAudio() {
             const audio = document.getElementById('wordAudio');
