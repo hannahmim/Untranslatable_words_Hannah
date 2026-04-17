@@ -70,7 +70,7 @@ body {
 
 .word-card {
     height: 60px;
-    border: 1px solid #2D4AB7;
+    border: 1px solid #FF2620; 
     border-radius: 6px;
     display: flex;
     justify-content: center;
@@ -99,3 +99,98 @@ body {
     opacity: 0.8.5;
     z-index: 20;
 }
+
+/* 화면 너비가 768px 이하 usable for phone (small screen) */
+@media (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column; /* 세로로 쌓기 */
+        min-height: 100vh;
+        height: auto;
+        overflow-y: auto; /* 스크롤 */
+        margin: 0;
+        padding: 0;
+    }
+    
+    .background-overlay {
+        position: fixed; /* 스크롤해도 안 움직임 no moving */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;  
+        z-index: 1;  
+        pointer-events: none;
+        opacity: 0.15;
+        color: #D63D42;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        padding-top: 20px; 
+    }
+
+    .background-overlay span {
+        display: block;
+        width: min-content;  
+        word-break: break-all; /* 자리가 좁으니 아래로 톡톡 떨어짐 */
+        
+        font-size: 7rem;     
+        line-height: 0.8;     
+        font-weight: 900;
+        text-align: center;
+    }
+
+    /* 2. 본문 컨테이너 (스크롤되는 부분) */
+    .index-container {
+        position: relative;
+        z-index: 10;    
+        padding-top: 100px;  
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+    .column {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* 섹션 내용 중앙 정렬 */
+        margin-bottom: 40px;
+    }
+
+    .btn-list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .word-card {
+        width: 85%; /* 화면 너비의 85% 차지 */
+        max-width: 300px;
+        text-align: center;
+        padding: 15px 0;
+        margin: 5px 0;
+        display: block;
+    }
+
+    /* 5. 푸터: 드디어 맨 아래로! */
+    .footer {
+        width: 100%;
+        position: relative; /* 고정 해제 */
+        text-align: center; /* 글자 중앙 정렬 */
+        padding: 30px 10px;
+        font-size: 0.75rem;
+        color: #2847E0;
+        background-color: transparent;
+        margin-top: auto; /* 컨테이너가 차지하고 남은 공간 아래에 딱 붙음 */
+    }
+
+    /* 6. 뒤로가기 버튼 */
+    .back-home {
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        z-index: 999;
+    }
