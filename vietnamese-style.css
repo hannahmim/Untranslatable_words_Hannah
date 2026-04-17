@@ -116,3 +116,23 @@ body {
 .word-item:not(.active):hover {
     color: rgba(183, 45, 137, 0.15);
 }
+
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 20px; /* 상단 바 좁게 */
+    }
+    .back-btn {
+        left: 17px;
+    }
+    .word-item {
+        font-size: 1.8rem; /* 단어 크기 줄임 */
+        margin: 35px 0;
+    }
+    .word-item.active {
+        font-size: 2.2rem;
+        transform: scale(1.1); /* 너무 커지지 않게 */
+    }
+    .wheel-list {
+        padding-top: 42vh; /* 중앙 위치 맞춤 */
+    }
+}
