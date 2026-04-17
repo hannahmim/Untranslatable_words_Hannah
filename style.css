@@ -81,3 +81,45 @@ body {
     color: #FFFFFF;
     transform: translateY(-3px);
 }
+
+/* 화면 너비가 768px 이하 usable for phone (small screen) */
+@media (max-width: 768px) {
+    body {
+        height: 100vh;
+        padding-bottom: 0; 
+        overflow: hidden;
+    }
+
+    .background-overlay {
+        padding: 15px; 
+        font-size: 0.8rem; /* Background text smaller */
+        line-height: 1.5;
+        letter-spacing: 0.3rem;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .main-title {
+        font-size: 2.8rem; 
+        margin-bottom: 40px;
+        line-height: 1.1;
+    }
+
+    .button-group {
+        /* 버튼을 세로로 Vertical */
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .nav-btn {
+        width: 80%; 
+        max-width: 250px;
+        padding: 15px 0; /* to touch easy */
+        font-size: 1.1rem;
+        text-align: center;
+    }
+}
