@@ -125,7 +125,7 @@ body {
         left: 17px;
     }
     .word-item {
-        font-size: 1.8rem; /* 단어 크기 줄임 */
+        font-size: 1.3rem; /* 단어 크기 줄임 */
         margin: 35px 0;
     }
     .word-item.active {
