@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'appel du vide - Detail</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="detail-style.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="Français.html" class="back-btn">
+            <img src="https://img.icons8.com/m_outlined/50/D63D42/left.png" alt="back" width="28">
+        </a>
+    </header>
+
+    <main class="detail-container">
+        <div class="content-box">
+            
+            <h1 class="detail-word">L'appel du vide</h1>
+
+            <div class="pronunciation-group">
+                <button class="audio-btn" onclick="playAudio()">
+                    <img src="https://img.icons8.com/m_sharp/50/D63D42/speaker.png" alt="listen" width="24">
+                </button>
+                <span class="phonetic-script">[la.pɛl dy vid]</span>
+            </div>
+
+            <p class="word-definition">
+                The strange urge to jump when standing <br>
+                somewhere high, even though you would<br>
+                never actually do it.
+            </p>
+
+            <div class="example-section">
+                <p class="example-text">
+                    Standing on the cliff, she briefly felt <br>
+                    <span class="highlight">l' appel du vide</span> but quickly stepped back.<br>
+                    절벽 위에 서있는 그녀는 <br>
+                    잠시 <span class="highlight">l' appel du vide</span> 를 느꼈지만 곧바로 물러났다.<br>
+                    Đứng trên vách đá, cô ấy thoáng cảm thấy<br>
+                     <span class="highlight">l' appel du vide</span> nhưng nhanh chóng lùi lại.
+                </p>
+            </div>
+
+        </div>
+    </main>
+
+        <audio id="wordAudio" src="F_fifth_sound.mp3"></audio>
+
+    <script>
+        function playAudio() {
+            const audio = document.getElementById('wordAudio');
+            audio.play();
+        }
+    </script>
+
+</body>
+</html>
